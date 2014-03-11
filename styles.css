@@ -1,0 +1,19 @@
+.space {
+  padding-right: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+.container {
+  padding: 50px;
+  width: 600px;
+  margin: 0 auto;
+
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#next {
+  margin: 30px auto;
+  display: block;
+}

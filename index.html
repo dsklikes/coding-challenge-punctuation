@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-1.11.0.js"></script>
+  <script src="underscore.js"></script>
+  <script src="backbone.js"></script>
+</head>
+<body>
+  <div class="container" data-sentence='0'>
+    Welcome to the comma placer game. Click to place or remove commas from these sentences.
+    <button id='start'>Start</start>
+  </div>
+    <script type="text/template" id="sentence-template">
+        <% for (var i=0; i < wordArray.length;i++) { %>
+        <% if (wordArray[i].charAt(wordArray[i].length-1) == ',' ) { %>
+        <%= wordArray[i].substring(0, wordArray[i].length - 1) %><span class='space comma'>, </span>
+        <% } else { %>
+          <%= wordArray[i] %>
+          <% if (i != wordArray.length - 1) %>
+            <span class='space'> </span>
+        <% } %>
+      <% } %>
+
+      <button id='next'>Next Sentence</button>
+    </script>
+  <script src="script2.js"></script>
+</body>
+</html>
